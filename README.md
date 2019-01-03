@@ -31,7 +31,10 @@ more details.. https://github.com/ran-jit/tomcat-cluster-redis-session-manager/w
 	
 2. Add tomcat system property "catalina.base"
 	- **catalina.base="TOMCAT_LOCATION"**
-	     * example: export catalina.base=/opt/tomcat
+	     * edit the tomcat/bin/catalina.sh add JAVA_OPTS for example:
+	     ```
+	     JAVA_OPTS='-Dcatalina.base=/opt/tomcat'
+	     ```
 
 3. Extract downloaded package (tomcat-cluster-redis-session-manager.zip) to configure Redis credentials in redis-data-cache.properties file and move the file to tomcat/conf directory
 	- **tomcat/conf/redis-data-cache.properties**
